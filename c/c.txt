@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    // Menampilkan pesan pembukaan
+    printf("====================================\n");
+    printf("  Selamat datang di Program C!     \n");
+    printf("====================================\n");
+    printf("Program ini akan membantu Anda belajar bahasa C.\n\n");
+
+    // Menampilkan menu atau pilihan
+    printf("Pilih opsi yang ingin Anda lakukan:\n");
+    printf("1. Menampilkan informasi\n");
+    printf("2. Keluar\n");
+    
+    int choice;
+    printf("Masukkan pilihan Anda (1/2): ");
+    scanf("%d", &choice);
+
+    if (choice == 1) {
+        printf("Informasi: Program ini dikembangkan untuk belajar C.\n");
+    } else if (choice == 2) {
+        printf("Terima kasih! Sampai jumpa lagi.\n");
+    } else {
+        printf("Pilihan tidak valid.\n");
+    }
+
+    return 0;
+}
